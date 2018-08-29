@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
 
 	post "/login" do
 		user = User.find_by(username: params[:username])
-		binding.pry
+		#binding.pry
 		if user
 			redirect "/success"
 		else
